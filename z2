@@ -13,4 +13,4 @@ for i in range(1,8):
     elif ent >num:
         print("Меньше")
     elif ent == num:
-        print("В яблочко")
+        print("В яблочко") 
