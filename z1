@@ -1,0 +1,21 @@
+from math import pow, fabs
+
+print('''Разность a и c не должна равняться 0
+введите числа
+a b c ''')
+
+a, b, c = map(int, input().split())
+
+while c == a:
+        letter = input('''Разность а и с не может равняться 0
+        Введите переменную которую хотите изменить (a or c): ''')
+        if letter == 'a':
+            a = int(input('a = '))
+        else:
+            c = int(input('c = '))
+
+v1 = 1 - a * pow(b,c) - a * (pow(b,2) - pow(c,2))
+v2 = (b - c + a)*(12 + b)/(c-a)
+ex = fabs(v1 + v2)
+
+print(ex)
