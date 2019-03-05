@@ -1,2 +1,2 @@
 # py1
-lab1
+labs
